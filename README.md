@@ -18,3 +18,4 @@ stagnating in and around 33%
 
 I tried using various number of layers for BiLSTM, and found that accuracy peaked at a 2 layered model.
 
+
