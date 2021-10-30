@@ -18,4 +18,4 @@ stagnating in and around 33%
 
 I tried using various number of layers for BiLSTM, and found that accuracy peaked at a 2 layered model.
 
-![Validation Accuracy vs Number of BiLSTM layers](/Graphs/Validation Accuracy vs Number of BiLSTM layers.png)
+![Validation Accuracy vs Number of BiLSTM layers](https://github.com/Amapocho/Natural-Language-Inference-and-Probing/blob/main/Graphs/Validation%20Accuracy%20vs%20Number%20of%20BiLSTM%20layers.png)
