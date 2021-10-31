@@ -28,7 +28,7 @@ The model only had to be trained for 15 epochs after which it started to overfit
 
 ## Probe
 
-I constructed a POS probe to analyse the model. It took the output from the different internal layers of
+I constructed a Part-Of-Speech (POS) tag probe to analyse the model. It took the output from the different internal layers of
 the inference model, passed it through a dense neural net to predict the POS tag of the words given as
 input.
 
