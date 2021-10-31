@@ -63,3 +63,10 @@ interpret English Language since it has a similar accuracy and in fact worse los
 implemented after the embedding layer. This is very obvious since words in the latter part of a
 sentence very often changed the meaning of the initial words to a great extent thus changing which
 POS tag they belong to.
+
+On the other side of the spectrum, we can see that the 4 layered BiLSTM actually has better results in
+identifying POS tags but as we have observed before, gives us a worse result on our inference model.
+From this we can hypothesise that POS tags are not the only measure of understanding language. There
+are other metrics which help the model understand language and consequently interpret the inference
+between two sentences and if a model can interpret POS tags better doesn’t necessarily mean it is
+going to be perform better on the actual task.
