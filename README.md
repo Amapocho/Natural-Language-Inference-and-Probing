@@ -50,3 +50,10 @@ embeddings itself gives us a pretty high accuracy. That can be explained given t
 prepositions, articles and nouns can be interpreted as such without requiring context. However,
 adverbs, adjectives and such will need context and memory-based calculation which can only be done
 by the LSTM layers.
+
+|                  | Validation Accuracy | Validation Loss |
+|------------------|---------------------|-----------------|
+| 2 layered BiLSTM |        86.23        |      1.428      |
+| 1 layered BiLSTM |        83.76        |      1.533      |
+| 4 layered BiLSTM |        87.89        |      1.363      |
+| 2 layered LSTM   |        70.78        |      3.296      |
