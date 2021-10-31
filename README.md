@@ -18,4 +18,10 @@ stagnating in and around 33%
 
 I tried using various number of layers for BiLSTM, and found that accuracy peaked at a 2 layered model.
 
+![Validation Accuracy vs Number of BiLSTM layers](https://github.com/Amapocho/Natural-Language-Inference-and-Probing/blob/main/Graphs/Validation%20Accuracy%20vs%20Number%20of%20BiLSTM%20layers.png)
 
+The model only had to be trained for 15 epochs after which it started to overfit/plateau.
+
+![Training and Validation Loss](https://github.com/Amapocho/Natural-Language-Inference-and-Probing/blob/main/Graphs/Loss.png)
+
+![Training and Validation Accuracy](https://github.com/Amapocho/Natural-Language-Inference-and-Probing/blob/main/Graphs/Accuracy.png)
