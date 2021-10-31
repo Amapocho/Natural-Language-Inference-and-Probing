@@ -1,6 +1,6 @@
 # Natural Language Inference and Probing
 
-##  Dataset
+## Natural Language Inference on SNLI Dataset
 
 I decided to go with a model with an embedding layer followed by a linear translation layer and
 then two layers of bi-directional LSTM. After passing the premise and hypothesis through these
@@ -25,3 +25,15 @@ The model only had to be trained for 15 epochs after which it started to overfit
 ![Training and Validation Loss](https://github.com/Amapocho/Natural-Language-Inference-and-Probing/blob/main/Graphs/Loss.png)
 
 ![Training and Validation Accuracy](https://github.com/Amapocho/Natural-Language-Inference-and-Probing/blob/main/Graphs/Accuracy.png)
+
+## Probe
+
+I constructed a POS probe to analyse the model. It took the output from the different internal layers of
+the inference model, passed it through a dense neural net to predict the POS tag of the words given as
+input.
+
+To extract the POS tags from the dataset I iterated over the sentences given in the parsed tree format. I
+tokenized both the words and the tags before passing it through the aforementioned model.
+
+I carried out probing on 3 different models I had tried while training for inference so as to analyse the
+difference and understand how the model calculates and interprets English language
