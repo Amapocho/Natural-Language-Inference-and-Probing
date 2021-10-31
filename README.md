@@ -13,7 +13,7 @@ stagnating in and around 33%
 
 |        | Validation Accuracy |
 |--------|---------------------|
-| BiLSTM |        79.60        |
+| BiLSTM |        79.60%       |
 | LSTM   |         ~33%        |
 
 I tried using various number of layers for BiLSTM, and found that accuracy peaked at a 2 layered model.
@@ -40,9 +40,9 @@ difference and understand how the model calculates and interprets English langua
 
 |                        | Validation Accuracy | Validation Loss |
 |------------------------|---------------------|-----------------|
-| Embedding Layer        |        68.13        |      1.977      |
-| Translation Layer      |        64.85        |      2.216      |
-| 2 layered BiLSTM Layer |        86.23        |      1.428      |
+| Embedding Layer        |        68.13%       |      1.977      |
+| Translation Layer      |        64.85%       |      2.216      |
+| 2 layered BiLSTM Layer |        86.23%       |      1.428      |
 
 The above tabulated result is an expected outcome given that sequential information is processed in
 the LSTM layers and not before thus showing a major rise in POS tagging accuracy. However, the
@@ -53,10 +53,10 @@ by the LSTM layers.
 
 |                  | Validation Accuracy | Validation Loss |
 |------------------|---------------------|-----------------|
-| 2 layered BiLSTM |        86.23        |      1.428      |
-| 1 layered BiLSTM |        83.76        |      1.533      |
-| 4 layered BiLSTM |        87.89        |      1.363      |
-| 2 layered LSTM   |        70.78        |      3.296      |
+| 2 layered BiLSTM |        86.23%       |      1.428      |
+| 1 layered BiLSTM |        83.76%       |      1.533      |
+| 4 layered BiLSTM |        87.89%       |      1.363      |
+| 2 layered LSTM   |        70.78%       |      3.296      |
 
 From the given observations it is clear that a Mono Directional LSTM does not help the model to
 interpret English Language since it has a similar accuracy and in fact worse loss than a POS tagger
