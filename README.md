@@ -13,8 +13,8 @@ stagnating in and around 33%
 
 |        | Validation Accuracy |
 |--------|---------------------|
-| BiLSTM | 79.60               |
-| LSTM   | ~33%                |
+| BiLSTM |        79.60        |
+| LSTM   |         ~33%        |
 
 I tried using various number of layers for BiLSTM, and found that accuracy peaked at a 2 layered model.
 
@@ -37,3 +37,16 @@ tokenized both the words and the tags before passing it through the aforemention
 
 I carried out probing on 3 different models I had tried while training for inference so as to analyse the
 difference and understand how the model calculates and interprets English language
+
+|                        | Validation Accuracy | Validation Loss |
+|------------------------|---------------------|-----------------|
+| Embedding Layer        |        68.13        |      1.977      |
+| Translation Layer      |        64.85        |      2.216      |
+| 2 layered BiLSTM Layer |        86.23        |      1.428      |
+
+The above tabulated result is an expected outcome given that sequential information is processed in
+the LSTM layers and not before thus showing a major rise in POS tagging accuracy. However, the
+embeddings itself gives us a pretty high accuracy. That can be explained given the fact that a lot of
+prepositions, articles and nouns can be interpreted as such without requiring context. However,
+adverbs, adjectives and such will need context and memory-based calculation which can only be done
+by the LSTM layers.
