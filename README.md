@@ -57,3 +57,9 @@ by the LSTM layers.
 | 1 layered BiLSTM |        83.76        |      1.533      |
 | 4 layered BiLSTM |        87.89        |      1.363      |
 | 2 layered LSTM   |        70.78        |      3.296      |
+
+From the given observations it is clear that a Mono Directional LSTM does not help the model to
+interpret English Language since it has a similar accuracy and in fact worse loss than a POS tagger
+implemented after the embedding layer. This is very obvious since words in the latter part of a
+sentence very often changed the meaning of the initial words to a great extent thus changing which
+POS tag they belong to.
